@@ -1,5 +1,100 @@
 .image-container {
-    width: 500px;
+    width: 600px;
     height: 500px;
-    border: 1px solid black;
+}
+.webcam {
+    border: 10px solid #e9ce4c;
+    overflow: hidden;
+}
+.main-container {
+    text-align: center;
+    background-color: antiquewhite;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+        
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+}
+.header-title {
+    margin: 0px auto;
+    position: relative;
+    z-index: 99;
+    -webkit-animation: animatelogo 2s infinite; /* Safari 4+ */
+      -moz-animation:    animatelogo 2s infinite; /* Fx 5+ */
+      -o-animation:      animatelogo 2s infinite; /* Opera 12+ */
+      animation:         animatelogo 2s infinite; /* IE 10+ */
+}
+.header-title img {
+    width: 350px;
+}
+.webcam-container img {
+    width: 35%;
+
+    height: 35%;
+    margin: 2% 0 2% 0;
+    
+    /* background-color: gainsboro; */
+}
+
+@-webkit-keyframes animatelogo {
+    0%,100% {
+          transform: translateY(0px);
+          -webkit-transform: translateY(0px); 
+      }
+    50% {
+          transform: translateY(20px);
+          -webkit-transform: translateY(20px); 
+      }
+  }
+  @-moz-keyframes animatelogo {
+    0%,100% {
+          transform: translateY(0px);
+          -webkit-transform: translateY(0px); 
+      }
+    50% {
+          transform: translateY(20px);
+          -webkit-transform: translateY(20px); 
+      }
+  }
+  @-o-keyframes animatelogo {
+    0%,100% {
+          transform: translateY(0px);
+          -webkit-transform: translateY(0px); 
+      }
+    50% {
+          transform: translateY(20px);
+          -webkit-transform: translateY(20px); 
+      }
+  }
+  @keyframes animatelogo {
+    0%,100% {
+          transform: translateY(0px);
+          -webkit-transform: translateY(0px); 
+      }
+    50% {
+          transform: translateY(20px);
+          -webkit-transform: translateY(20px); 
+      }
+    }
+.input-result-container {
+    height: 50px;
+    width: 500px;
+    text-align: center;
+    margin: 0px auto;
+}
+.emo {
+    font-size: 100px;
+    position: relative;
+    top: 28%;
+    border: 10px solid #e9ce4c;
+    margin: 0px auto;
+    height: 200px;
+}
+.capture-button {
+    margin: 10px auto;
+}
+.emoji-container {
+    margin-top: 30px;
 }
